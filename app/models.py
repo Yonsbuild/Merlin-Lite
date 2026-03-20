@@ -3,13 +3,13 @@ Data models for Merlin-Lite analysis pipeline.
 These models define the structure of input requests and output responses.
 """
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 
 
 class AnalysisRequest(BaseModel):
     """Input model for analysis requests."""
-    text: str
+    text: str = Field(..., min_length=1, max_length=5000)
     context: Optional[Dict[str, str]] = None
 
 
