@@ -9,8 +9,7 @@ but here we mock the interface to show architectural patterns.
 """
 
 import asyncio
-from typing import Dict, List
-import time
+from typing import Dict
 
 
 async def analyze_text(text: str, context: Dict = None) -> Dict:

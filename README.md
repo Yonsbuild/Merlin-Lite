@@ -4,7 +4,13 @@ A simplified demonstration of a production AI analysis pipeline. This repository
 
 ## What It Is
 
-Merlin-Lite is a **simplified version of a larger AI pipeline system** designed to process text data and generate structured outputs. The full system processes multi-modal data with verification and validation logic, but this version demonstrates the core architectural patterns without proprietary implementation details.
+This repository demonstrates a **multi-stage analysis pipeline** designed to:
+- **Process data through structured stages** (ingestion → processing → output)
+- **Handle async operations** for real-world I/O-bound workflows
+- **Return structured JSON responses** with typed models and validation
+- **Separate concerns** across logical layers (API, pipeline, analysis)
+
+The codebase shows how to design systems for scale and maintainability, using patterns commonly found in production data processing platforms.
 
 ## What It Does
 
@@ -137,17 +143,15 @@ Proper error handling at system boundaries:
 
 ## What's Omitted
 
-This version excludes:
+This repository demonstrates architectural patterns and system design for an AI pipeline. Proprietary validation and verification components are intentionally excluded.
 
-- **Proprietary verification logic**: The full system includes complex transcript verification and span resolution algorithms
-- **Real AI models**: Analysis is mocked to show interface design only
-- **Real datasets**: Uses synthetic sample data
-- **Complex prompt engineering**: No real prompts are exposed
-- **Database integration**: Uses in-memory processing only
-- **Advanced validation rules**: Shows basic validation patterns only
-- **Monitoring and metrics**: Demonstrates logging only
-
-**Protection note**: If someone could rebuild the full Merlin system from this code, we've overshared. This version shows how the system is organized, not how it works.
+Specifically omitted:
+- **Proprietary verification logic**: Complex algorithms specific to the full system
+- **Real AI models**: Analysis operations are mocked to demonstrate interface design
+- **Production datasets**: Uses synthetic sample data only
+- **Implementation details**: No real prompts or algorithmic logic exposed
+- **Database integration**: In-memory processing for demonstration
+- **Monitoring infrastructure**: Basic logging only
 
 ## Getting Started
 
@@ -217,7 +221,7 @@ This codebase demonstrates:
 
 ✅ **Type Safety**: Pydantic models for data validation
 
-This is the kind of foundational architecture I use to design larger systems like the full Merlin pipeline.
+This architecture is foundational for building larger, production-grade analysis systems.
 
 ## Future Enhancements
 

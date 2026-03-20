@@ -11,7 +11,6 @@ Demonstrates:
 - Structured output
 """
 
-import asyncio
 import time
 from typing import Dict, Optional
 from .analyzer import analyze_text, validate_output
@@ -85,8 +84,6 @@ class AnalysisPipeline:
 
         Flow: input → ingest → process → output
         """
-        start_time = time.time()
-
         try:
             # Stage 1: Ingest
             ingested = await self.ingest(text, context)

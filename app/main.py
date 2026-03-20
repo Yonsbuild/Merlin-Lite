@@ -12,9 +12,7 @@ Usage:
 """
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
 import logging
-from typing import Optional
 
 from .models import AnalysisRequest, AnalysisResponse, HealthResponse
 from .pipeline import pipeline
