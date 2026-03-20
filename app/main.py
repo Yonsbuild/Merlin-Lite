@@ -1,14 +1,5 @@
 """
 Merlin-Lite: Simplified AI pipeline demonstration.
-
-This FastAPI application demonstrates:
-- API design for analysis endpoints
-- Async request handling
-- Integration with the analysis pipeline
-- Structured request/response models
-
-Usage:
-    uvicorn app.main:app --reload
 """
 
 from fastapi import FastAPI, HTTPException
@@ -50,15 +41,7 @@ async def analyze(request: AnalysisRequest) -> AnalysisResponse:
 
     Takes input text and optional context, runs it through the pipeline,
     and returns structured analysis results.
-
-    Args:
-        request: AnalysisRequest containing text and optional context
-
-    Returns:
-        AnalysisResponse with analysis results
-
-    Raises:
-        HTTPException: If analysis fails
+    
     """
     try:
         logger.info(f"Received analysis request: {len(request.text)} characters")
