@@ -4,11 +4,6 @@ Core analysis pipeline.
 This module orchestrates the flow:
   input → ingestion → processing → output
 
-Demonstrates:
-- Modular pipeline stages
-- Data transformation between stages
-- Async processing
-- Structured output
 """
 
 import time
