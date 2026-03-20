@@ -130,6 +130,3 @@ curl -X POST "http://localhost:8000/analyze" \
 
 This is a demonstration project created for educational and hiring purposes.
 
-## Notes
-
-*This scaffolded directory was created with use of AI for time and infrastructural signaling* 
