@@ -44,6 +44,8 @@ async def analyze(request: AnalysisRequest) -> AnalysisResponse:
     
     """
     try:
+        if not request.text.strip():
+            raise HTTPException(status_code=400, detail="Input text cannot be empty.")
         logger.info(f"Received analysis request: {len(request.text)} characters")
 
         # Run pipeline
