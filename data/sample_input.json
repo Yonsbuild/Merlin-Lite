@@ -1,0 +1,25 @@
+{
+  "example_requests": [
+    {
+      "text": "Artificial intelligence is transforming how we build software systems. Modern AI enables developers to automate complex tasks and improve code quality.",
+      "context": {
+        "domain": "technology",
+        "source": "technical_discussion"
+      }
+    },
+    {
+      "text": "The quick brown fox jumps over the lazy dog. This sentence contains every letter of the English alphabet.",
+      "context": {
+        "domain": "linguistics",
+        "source": "text_analysis"
+      }
+    },
+    {
+      "text": "Machine learning models require careful validation and testing to ensure they behave correctly in production environments.",
+      "context": {
+        "domain": "machine_learning",
+        "source": "best_practices"
+      }
+    }
+  ]
+}
