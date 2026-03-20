@@ -80,6 +80,9 @@ class AnalysisPipeline:
         Flow: input → ingest → process → output
         """
         try:
+            if len(text) > 5000:
+              raise ValueError("Input exceeds pipeline limit")
+            
             # Stage 1: Ingest
             ingested = await self.ingest(text, context)
 
