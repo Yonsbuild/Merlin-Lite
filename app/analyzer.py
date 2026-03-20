@@ -16,11 +16,6 @@ async def analyze_text(text: str, context: Dict = None) -> Dict:
     """
     Mock text analysis function.
 
-    Demonstrates:
-    - Async processing (key for real-world constraints)
-    - Structured output format
-    - Simulated processing delay
-
     In production, this would call actual AI models.
     This version shows the interface design only.
     """
